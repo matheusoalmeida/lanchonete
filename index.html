@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgado e Cia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="components/images/01.png" alt="Foto de Perfil" class="profile-pic">
+        </div>
+        <div class="text-container">
+            <h1>Salgado e Cia.</h1>
+            <p>Sabor irresistível que você merece a qualquer hora!</p>
+        </div>
+        <div class="social-buttons">
+            
+            <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i></a>
+            
+        
+            <a href="https://www.instagram.com/seuperfil/" class="insta" target="_blank">
+                <i class="fab fa-instagram"></i></a>
+                
+                
+            
+            <a href="localização" class="location" target="_blank">
+                <i class="fa-solid fa-location-dot"></i></a>
+            
+        </div>
+        <section class="specialties">
+            <div class="specialty"><a href="https://wa.me/1234567890" target="_blank"> Façaseu pedido</a></div>
+            <div class="specialty"><a href="components/images/cardapio.png" target="_blank">Cardápio</a></div>
+        </section>
+    </header>
+    
+<style>
+        /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.8);
+    background-size: 200% 200%;
+    animation: gradientBG 5s ease infinite;
+    color: #333;
+}
+
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(82, 82, 82, 0.2);
+}
+
+.profile-container {
+    margin-bottom: 5px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000000;
+}
+
+.text-container h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #fdfdfd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+/* Especialidades */
+.specialties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.specialty {
+    background: rgba( 79, 79, 79,0.8);
+    color: #f7f7f7;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+
+}
+
+.specialty a {
+        text-decoration: none;
+        color: #ffffff;
+        
+    }
+
+.specialty:hover {
+    background: 	#363636;
+    transform: translateY(-5px);
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    
+    background: #25D366;
+    border-radius: 50%;
+    padding: 15px;
+    transition: background 0.3s;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Ajuste o tamanho do ícone */
+    width: 60px; /* Ajuste o tamanho do botão */
+    height: 60px; /* Ajuste o tamanho do botão */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+}
+
+/* Botão do Instagram */
+.insta {
+    margin-left: 5px;
+    background: #e4405f;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background 0.3s;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Ajuste o tamanho do ícone */
+    width: 60px; /* Ajuste o tamanho do botão */
+    height: 60px; /* Ajuste o tamanho do botão */
+    text-decoration: none; /* Remove sublinhado */
+}
+.insta:hover {
+    background: #e90f37;
+} 
+
+.location {
+    margin-left: 5px;
+    background: #002fff;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background 0.3s;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Ajuste o tamanho do ícone */
+    width: 60px; /* Ajuste o tamanho do botão */
+    height: 60px; /* Ajuste o tamanho do botão */
+    text-decoration: none; /* Remove sublinhado */
+}
+.location:hover {
+    background: #385af3;
+} 
+
+.social-buttons {
+    display: flex; /* Utiliza Flexbox para alinhamento horizontal */
+    justify-content: center; /* Centraliza os botões */
+    margin-top: 10px ; /* Adiciona margem para separar dos outros elementos */
+}
+
+    </style>
+
+    
+</body>
+</html>
